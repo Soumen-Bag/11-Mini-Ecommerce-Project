@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Seller Item</title>
+</head>
+<body>
+    <form id="stockForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+        
+        <label for="price">Price per Unit:</label>
+        <input type="number" id="price" required>
+    
+        <button type="button" onclick="addStock()">Add Stock</button>
+      </form>
+      <h2>Stock List</h2>
+    <ul id="stockList">
+        <!-- Stock items will be added here dynamically -->
+    </ul>
+
+    <p>Total Stock Value: $<span id="totalStockValue">0.00</span></p>
+</body>
+</html>
